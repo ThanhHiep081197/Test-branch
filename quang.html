@@ -1,0 +1,84 @@
+hiep đẹp trai
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<style>
+#myContainer {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#myAnimation {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+color: white;
+
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:600px; top:0px;}
+  50%  {background-color:blue; left:600px; top:1000px;}
+  75%  {background-color:green; left:0px; top:1000px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+/*@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:700px; top:0px;}
+  50%  {background-color:blue; left:700px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:500ppx; top:0px;}
+}*/
+	</style>
+</head>
+<body >
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<!-- <button class="run">Start</button> -->
+				<div id ="myContainer">
+					<img src="https://cdn1.vectorstock.com/i/1000x1000/20/15/happy-new-2020-year-poster-template-with-shining-vector-24922015.jpg" alt="">
+				</div>
+				
+				
+ 
+
+<iframe id="video" style="display: none;" width="853" height="480" src="https://www.youtube.com/embed/8rApi6FPJlg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div id ="myAnimation"><h3>HAPPY NEW YEAR</h3></div>
+			</div>
+		</div>
+	</div>
+	<script>
+ $(document).ready(function() {
+  // $('.run').on('click', function(ev) {
+ 
+    $("#video")[0].src += "?autoplay=1";
+    //ev.preventDefault();
+ 
+  // });
+});
+</script>
+</body>
+</html>	
